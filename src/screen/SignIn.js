@@ -1,9 +1,10 @@
-import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 import { AntDesign } from '@expo/vector-icons';
 
-const DetailsScreen = ({ navigation }) => {
+const SignIn = ({ navigation }) => {
   return (
+   
     <View style={styles.container}>
       <View style={{ position: 'absolute', marginTop: 25 }}>
         <Image
@@ -95,7 +96,7 @@ const DetailsScreen = ({ navigation }) => {
       </View>
       
       <TouchableOpacity style={styles.n}
-      // onPress={() => navigation.navigate() }
+      onPress={() => navigation.navigate('Plan') }
       >
         <Text style={styles.txxt}>Show My Plans</Text>
       </TouchableOpacity>
@@ -104,7 +105,7 @@ const DetailsScreen = ({ navigation }) => {
   )
 }
 
-export default DetailsScreen
+export default SignIn
 
 const styles = StyleSheet.create({
   container: {

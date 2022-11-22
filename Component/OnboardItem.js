@@ -11,7 +11,7 @@ const OnboardItem = () => {
     <Text style={styles.texts}>Track your daily activities, burned calories and achieve your Goals</Text>
   
     <TouchableOpacity 
-    onPress={() => navigation.navigate('DetailsScreen')}
+    onPress={() => navigation.navigate('SignIn')}
     style={styles.btn}
     >
     <Text style={{color:'white', fontWeight: 'bold', fontSize: 21}}>Start</Text>
